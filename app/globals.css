@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --background-image: url('/bg.svg'); /* Default background image */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --background-image: url('/bg.svg'); /* Dark mode background image */
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --background-image: url('/bg2.svg'); /* Mobile background image */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background) var(--background-image) no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 640px) {
+  .marginer {
+    margin-top: 12%;
+  }
+  .social-card {
+    width: 130%; /* Adjust this value as needed */
+  }
+  .martoper {
+    margin-top: 10%;
+  }
+  .cardscaler {
+    scale: 0.9;
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: fadeInOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
