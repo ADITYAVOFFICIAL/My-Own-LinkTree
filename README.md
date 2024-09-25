@@ -27,11 +27,6 @@ A sleek and modern Linktree-style web app built with Next.js, TypeScript, Tailwi
 - **Framer Motion** for fluid animations and interactions.
 - **Dynamic caching** to optimize load times and user experience.
 
-## Project Highlights:
-> [!CAUTION]
-> Developed in under **3 hours** during a caffeine-powered coding sprint ⚡☕.
-- Still to be integrated: **analytics** for tracking and optimizing user engagement.
-
 <br>
 
 ## Demo Screenshot of Home Page
